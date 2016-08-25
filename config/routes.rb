@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  # adding a get route for hello_world
+  get 'hello_world', to: 'static#hello_world'
+
+# The HTTP verb - in this case we're using the get HTTP verb.
+# The path - 'about' represents the path in the URL bar that the route will be mapped to.
+# The controller action - 'static#about' tells the Rails routing system that this route
+  # should be passed through the static controller's about action. If the term action
+  # sounds foreign, actions are just Ruby speak for a method in a controller.
+  # So in the StaticController will be a method called about that gets called when a user goes to /about.
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
