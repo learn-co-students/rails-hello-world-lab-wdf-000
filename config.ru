@@ -2,3 +2,5 @@
 
 require ::File.expand_path('../config/environment', __FILE__)
 run Rails.application
+
+# config.web_console.development_only = false
